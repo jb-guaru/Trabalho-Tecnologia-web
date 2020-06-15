@@ -1,0 +1,50 @@
+<html>
+
+<head>
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+</head>
+
+<body>
+
+
+    <form name="nomedoform" action="xxxx" 
+method="xxxx" >
+    <tr> 
+        <th>Formul&aacute;rio 
+        de contato</th>
+    </tr>
+    <hr>
+
+<a href="/formContato"><button type="button" class="btn btn-primary">Novo Cadastro</button></a>
+
+<table class="table">
+    
+
+    
+      <tr>
+        <th>ID</th>
+        <th>NOME</th>
+        <th>Tel</th>
+        <th>E-MAIL</th>
+        
+      </tr>
+    
+    <% contato.forEach(function(item){ %>
+    <tr>
+        <td><%= item.id %></td>
+        <td><%= item.nome %></td>
+        <td><%= item.Tel %></td>
+        <td><%= item.email %></td>
+        <td>
+            <a href="/atualizarContato?id=<%= item.id %>"><button type="button" class="btn btn-success">Atualizar</button></a>
+        </td>
+        <td>
+            <a href="/excluirContato?id=<%= item.id %>" onClick="return confirm('Confirma a exclusão?')"><button type="button" class="btn btn-danger">Excluir</button></a>
+        </td>
+    </tr>
+    <% }) %>
+
+
+</table>
+

@@ -1,0 +1,72 @@
+body {
+    padding:175;
+    margin: 0;
+
+}
+ 
+form , table {
+    background:#4f4f4f; 
+    
+    
+    font:12px arial, verdana, helvetica, sans-serif; 
+    
+    
+    border-top:8px solid #cfcfcf;
+    
+    
+    border-left:8px solid #cfcfcf;
+    
+    
+    border-right:8px solid #696969; 
+    
+    border-bottom:8px solid #696969; 
+    
+    
+    border-collapse:collapse; 
+    
+    color:#ff9900;
+    
+          } 
+
+          
+           th {
+                background:#000000;
+                
+                color:#ff9900;
+                
+                
+                
+                font: bold 12px arial, verdana, helvetica, sans-serif; 
+                
+                
+                border-bottom:5px solid #ff9900; 
+               
+                } 
+                input {
+                    background:#b5b5b5;
+ 
+                
+
+                border:1px dashed #ff9900;
+
+                }
+
+                
+
+                   input.botao {
+                    background:#000000; 
+                    
+                    
+                    color:#ffffff; 
+                    border:2px solid #ffffff;
+                    
+
+                   }
+                   td {
+                    padding:3px;
+
+                    color: black
+                    }
+
+                  
+                  

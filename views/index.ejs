@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <h1>Página do Joao </h1>
+    <hr>
+    <hr>
+
+    <form>
+        body {
+            padding: 50;
+            margin: 300;
+        }
+         
+        form {
+            font-family: Verdana,Tahoma,sans-serif;
+            font-size: 15px;
+            background-color: #CC3300;
+            max-width: 500px;
+        }
+         
+        h1 {
+            margin-bottom: 20px;
+            margin-left: 20px;
+            color: #66FFFF;
+            text-shadow: 5px 5px 5px black;
+        }
+         
+        input, textarea {
+            width: 200px;
+            padding: 10px;
+            color: black;
+            margin-left: 20px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border: 1px solid;
+        }
+         
+        input:hover, textarea:hover, input:focus, textarea:focus {
+            border-color: #000066;
+            box-shadow: 5px 0px 9px #FFFF00;
+            background-color: #66FFFF;
+            color: black;
+            font-weight: bold;
+        }
+         
+        .submit input {
+            background-color: #66FFFF;
+            height: 40px;
+            width: 100px;
+            font-weight: bold;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border: 1px solid;
+            color: black;
+        }
+         
+        textarea {
+            width: 400px;
+            height: 120px;
+            line-height: 20px;
+            max-width: 400px;
+        }
+         
+        form label {
+            margin-left: 20px;
+            color: #FFFFFF;
+            font-weight: bold;
+        }n>
+      </form>
+<hr>
+
+    <p><%=Nome%></p>
+    <h2><%=Empresa%></h2>
+
+    <% if(Ano == 2020){ %>
+        <p>O ano é 2020!</p>
+     <% }%>   
+
+     <% Produtos.forEach(function(Produto){%>
+        <h2><%=Produto.nome%></h2>
+        <h3><%=Produto.preco%></h3>
+        <hr>
+        <%})%>
+
+<img  src='/imagens/jb.jpg' />
+
+
+</body>
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="/js/bootstrap.min.js"></script>
+</html>
